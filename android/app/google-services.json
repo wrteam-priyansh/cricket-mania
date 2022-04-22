@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "558654061429",
+    "project_id": "cricket-mania-c78d8",
+    "storage_bucket": "cricket-mania-c78d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558654061429:android:a5ee7f3a0cfaf0e165b13c",
+        "android_client_info": {
+          "package_name": "com.example.cricket_mania"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "558654061429-ce0to1mukvn0lkme9snjed68ajuivl2f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZXvanv7uNT8u6yDeDNRWOAeE6r58Yutw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "558654061429-ce0to1mukvn0lkme9snjed68ajuivl2f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
