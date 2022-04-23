@@ -16,9 +16,12 @@ class CountryException implements Exception {
 }
 
 class CountryRepository {
+  //
+
   final FirebaseFirestore _firebaseFirestore = FirebaseFirestore.instance;
   Future<List<Country>> fetchCountries() async {
     try {
+      //you can replace with http api call also
       final querySnapshot =
           await _firebaseFirestore.collection(countriesCollection).get();
 

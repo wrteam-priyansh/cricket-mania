@@ -50,13 +50,6 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          PlayerRepository()
-              .fetchTopThreePlayers()
-              .then((value) => print(value.length));
-        },
-      ),
       appBar: AppBar(
         title: const Text("Cricket Mania"),
       ),

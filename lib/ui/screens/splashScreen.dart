@@ -19,6 +19,9 @@ class _SplashScreenState extends State<SplashScreen> {
 
   void navigateToNextScreen() async {
     await Future.delayed(const Duration(seconds: 3));
+
+    //
+
     if (context.read<AuthCubit>().state is Authenticated) {
       Navigator.of(context).pushReplacementNamed(Routes.home);
     } else {

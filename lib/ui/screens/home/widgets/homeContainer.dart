@@ -16,6 +16,7 @@ class _HomeContainerState extends State<HomeContainer> {
   @override
   void initState() {
     super.initState();
+
     Future.delayed(Duration.zero, () {
       context.read<CountriesCubit>().fetchCountries();
     });
@@ -49,7 +50,10 @@ class _HomeContainerState extends State<HomeContainer> {
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                   textAlign: TextAlign.center,
-                  style: const TextStyle(fontSize: 13),
+                  style: TextStyle(
+                    fontSize: 13,
+                    color: country.rank == 1 ? Colors.red : null,
+                  ),
                 ),
               )
             ],

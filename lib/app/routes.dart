@@ -14,6 +14,7 @@ class Routes {
   static String currentRoute = splash;
 
   static Route<dynamic> onGenerateRoute(RouteSettings routeSettings) {
+    //routeSettings.
     if (routeSettings.name == splash) {
       return CupertinoPageRoute(builder: (_) => const SplashScreen());
     }

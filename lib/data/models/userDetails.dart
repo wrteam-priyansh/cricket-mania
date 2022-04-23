@@ -10,4 +10,8 @@ class UserDetails {
     final json = documentSnapshot.data() as Map<String, dynamic>;
     return UserDetails(id: documentSnapshot.id, name: json['name']);
   }
+
+  UserDetails copyWith({String? updatedName, String? updatedId}) {
+    return UserDetails(id: updatedId ?? id, name: updatedName ?? name);
+  }
 }

@@ -10,6 +10,12 @@ class FavoritePlayersContainer extends StatefulWidget {
 
 class _FavoritePlayersContainerState extends State<FavoritePlayersContainer> {
   @override
+  void initState() {
+    print("In favorite screen");
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Container();
   }
