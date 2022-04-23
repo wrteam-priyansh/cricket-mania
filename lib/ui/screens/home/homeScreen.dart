@@ -1,5 +1,6 @@
 import 'package:cricket_mania/cubits/countriesCubit.dart';
 import 'package:cricket_mania/data/repositories/countryRepository.dart';
+import 'package:cricket_mania/data/repositories/playerRepository.dart';
 import 'package:cricket_mania/ui/screens/home/widgets/favoritePlayersContainer.dart';
 import 'package:cricket_mania/ui/screens/home/widgets/homeContainer.dart';
 import 'package:cricket_mania/ui/screens/home/widgets/profileContainer.dart';
@@ -49,6 +50,13 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          PlayerRepository()
+              .fetchTopThreePlayers()
+              .then((value) => print(value.length));
+        },
+      ),
       appBar: AppBar(
         title: const Text("Cricket Mania"),
       ),
